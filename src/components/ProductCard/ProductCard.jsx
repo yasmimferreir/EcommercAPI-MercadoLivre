@@ -1,18 +1,23 @@
 import React from "react";
 import "./ProductCard.css";
+import {BsFillCartPlusFill} from "react-icons/bs";
+import propTypes from "prop-types";
 
-function ProductCard() {
+
+function ProductCard({data}) {
+  const {title, thumbnail, price} = data;
+
   return(
     <>
       <section className="product-card">
-        <img src="https://http2.mlstatic.com/D_932360-MLA46545868431_062021-W.jpg" alt="product" className="card__image"/>
+        <img src={thumbnail}/>
 
         <div className="card__infos">
-          <h2 className="card__price">R$ 200.00</h2>
-          <h2 className="card__title">title</h2>
+          <h2 className="card__price">{price}</h2>
+          <h2 className="card__title">{title}</h2>
         </div>
 
-        <button type="button" className="button__add-card">+</button>
+        <button type="button" className="button__add-card"><BsFillCartPlusFill/></button>
 
       </section>
 
@@ -21,3 +26,7 @@ function ProductCard() {
 }
 
 export default ProductCard;
+
+ProductCard.propTypes = {
+  data: propTypes.shape({}),
+}.isRequired;
