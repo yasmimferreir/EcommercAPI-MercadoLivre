@@ -10,6 +10,13 @@ O projeto contém uma página,utilização de API Mercado Livre, Hooks.
 
 <br>
 
+🚀 Projeto 
+<br>
+
+<img src="https://github.com/yasmimferreir/Devclub-Backend-CodeBurguer/assets/97356148/56d50d21-8d96-403a-86fd-701d842b53da" width="1000px">
+
+<br>
+
 <br>
 
 
