@@ -4,7 +4,7 @@
 ### 📑Explicação
 
 Projeto focado nas habilidades Front-end com ReactJs e manipulação com API,
-desenvolvimento de sistema Web, contém boas práticas de utilizar Hoks do ReactJs, renderização de componentes, inclui uma página de Busca por produtos
+desenvolvimento de sistema Web, contém boas práticas de utilizar Hooks do ReactJs, renderização de componentes, inclui uma página de Busca por produtos
 do Mercado Livre,renderização de produtos buscados, componentes de renderização para carrinho de compras, valor de compras.
 O projeto contém uma página,utilização de API Mercado Livre, Hooks.
 
