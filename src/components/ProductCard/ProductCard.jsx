@@ -2,6 +2,7 @@ import React from "react";
 import "./ProductCard.css";
 import {BsFillCartPlusFill} from "react-icons/bs";
 import propTypes from "prop-types";
+import FormatCurrency from "../../utils/FormatCurrency";
 
 
 function ProductCard({data}) {
@@ -10,10 +11,10 @@ function ProductCard({data}) {
   return(
     <>
       <section className="product-card">
-        <img src={thumbnail}/>
+        <img src={thumbnail.replace(/\w\.jpg/gi, "W.jpg")}/>
 
         <div className="card__infos">
-          <h2 className="card__price">{price}</h2>
+          <h2 className="card__price">{FormatCurrency(price, "BRL")}</h2>
           <h2 className="card__title">{title}</h2>
         </div>
 
