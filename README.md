@@ -4,9 +4,16 @@
 ### 📑Explicação
 
 Projeto focado nas habilidades Front-end com ReactJs e manipulação com API,
-desenvolvimento de sistema Web, contém boas práticas de utilizar Hoks do ReactJs, renderização de componentes, inclui uma página de Busca por produtos
+desenvolvimento de sistema Web, contém boas práticas de utilizar Hooks do ReactJs, renderização de componentes, inclui uma página de Busca por produtos
 do Mercado Livre,renderização de produtos buscados, componentes de renderização para carrinho de compras, valor de compras.
 O projeto contém uma página,utilização de API Mercado Livre, Hooks.
+
+<br>
+
+🚀 Projeto 
+<br>
+
+<img src="https://github.com/yasmimferreir/Devclub-Backend-CodeBurguer/assets/97356148/56d50d21-8d96-403a-86fd-701d842b53da" width="1000px">
 
 <br>
 
