@@ -1,19 +1,23 @@
 import React from "react";
 import { BiSearch } from "react-icons/bi";
 import "./SearchBar.css";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import logoMercadoLivre from "../../assests/logo-mercadoLivre.png";
 import featchProducts from "../../Api/featchProducts";
+import AppContext from "../../Context/AppContext";
 
 function SearchBar() {
+  const { setProducts, setLoading } = useContext(AppContext);
   const [searchValue, setSearchValue] = useState(" ");
 
   const handleSearch = async (event) => {
     event.preventDefault();
+    setLoading(true);
 
     const returnProducts = await featchProducts(searchValue);
 
-    console.log(returnProducts);
+    setProducts(returnProducts);
+    setLoading(false);
     setSearchValue(" ");
   };
 
@@ -21,6 +25,8 @@ function SearchBar() {
     <>
       <img src={logoMercadoLivre} alt="logo" className="img-logo" />
       <form className="search-bar" onSubmit={handleSearch}>
+        {" "}
+        {name}
         <input
           type="search"
           value={searchValue}
@@ -29,7 +35,6 @@ function SearchBar() {
           required
           onChange={({ target }) => setSearchValue(target.value)}
         />
-
         <button type="submit" className="search_button">
           <BiSearch />
         </button>
