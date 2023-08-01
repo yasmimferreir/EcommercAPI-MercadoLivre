@@ -14,7 +14,7 @@ function CartButton() {
     const updateCart = async () => {
       const clientInfo = await localStorage.getItem("cartLocal:cartItems");
 
-      console.log(JSON.parse(clientInfo));
+      return JSON.parse(clientInfo);
     };
     updateCart();
   }, []);
